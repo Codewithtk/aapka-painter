@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a Site Visit | AapkaPainter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Reuse header from index.html -->
+  <header>
+    <div class="logo">AapkaPainter</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Book Site Visit</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <button class="menu-toggle">Menu</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="booking-form-section">
+      <h2>Book a Site Visit</h2>
+      <form id="booking-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+          <option value="Bangalore">Bangalore</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Noida">Noida</option>
+          <option value="Gurgaon">Gurgaon</option>
+          <option value="Ghaziabad">Ghaziabad</option>
+          <option value="Faridabad">Faridabad</option>
+        </select>
+
+        <label for="property-type">Property Type:</label>
+        <div>
+          <input type="radio" id="interior" name="property-type" value="Interior Space" required>
+          <label for="interior">Interior Space</label>
+          <input type="radio" id="villa" name="property-type" value="Villa/Bungalow" required>
+          <label for="villa">Villa/Bungalow</label>
+          <input type="radio" id="high-rise" name="property-type" value="High-Rise Apartment" required>
+          <label for="high-rise">High-Rise Apartment</label>
+          <input type="radio" id="commercial" name="property-type" value="Commercial Space" required>
+          <label for="commercial">Commercial Space</label>
+        </div>
+
+        <label for="visit-date">Preferred Visit Date:</label>
+        <input type="date" id="visit-date" name="visit-date" required>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Contact</a>
+    </div>
+    <p>&copy; 2023 AapkaPainter Pvt Ltd</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
