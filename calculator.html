@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painting Cost Calculator | AapkaPainter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Reuse header from index.html -->
+  <header>
+    <div class="logo">AapkaPainter</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="booking.html">Book Site Visit</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <button class="menu-toggle">Menu</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="calculator-section">
+      <h2>Estimate Painting Cost</h2>
+      <form id="cost-calculator" novalidate>
+        <label for="area">Area to be Painted (in sq. ft):</label>
+        <input type="number" id="area" name="area" required>
+
+        <label for="paint-type">Type of Paint:</label>
+        <select id="paint-type" name="paint-type" required>
+          <option value="distemper">Distemper</option>
+          <option value="emulsion">Emulsion</option>
+          <option value="enamel">Enamel</option>
+          <option value="texture">Texture</option>
+          <option value="lustre">Lustre</option>
+        </select>
+
+        <button type="submit">Calculate Cost</button>
+      </form>
+
+      <div id="result" class="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Contact</a>
+    </div>
+    <p>&copy; 2023 AapkaPainter Pvt Ltd</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
